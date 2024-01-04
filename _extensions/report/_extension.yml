@@ -1,10 +1,11 @@
 title: RAC Foundation Technical Report Format Template
-author: Rob J Hyndman
+author: Ivo Wengraf
 version: 0.1.0
 contributes:
   formats:
     pdf:
       template: racfreport.tex
       pdf-engine: pdflatex
+      fig-pos: "H"
       format-resources:
         - RACF_v1.png

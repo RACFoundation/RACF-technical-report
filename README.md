@@ -13,7 +13,7 @@ following command in the terminal window of RStudio (in the
 project/folder of your choice):
 
 ``` bash
-quarto use template numbats/monash-quarto-report
+quarto use template RACFoundation/RACF-technical-report
 ```
 
 This will install the extension and create an example qmd file that you
@@ -26,7 +26,7 @@ document. From the quarto project or document directory, run the
 following command to install this format:
 
 ``` bash
-quarto install extension numbats/monash-quarto-report
+quarto install extension RACFoundation/RACF-technical-report
 ```
 
 ## Example

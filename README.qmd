@@ -33,7 +33,7 @@ You can use this as a template to create a report.
 To do this, use the following command in the terminal window of RStudio (in the project/folder of your choice):
 
 ```bash
-quarto use template numbats/monash-quarto-report
+quarto use template RACFoundation/RACF-technical-report
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your report.
@@ -44,7 +44,7 @@ You may also use this format with an existing Quarto project or document.
 From the quarto project or document directory, run the following command to install this format:
 
 ```bash
-quarto install extension numbats/monash-quarto-report
+quarto install extension RACFoundation/RACF-technical-report
 ```
 
 ## Example

@@ -1,14 +1,10 @@
-title: Monash Working Paper Format Template
+title: RAC Foundation Technical Report Format Template
 author: Rob J Hyndman
 version: 0.1.0
 contributes:
   formats:
     pdf:
-      template: monashreport.tex
+      template: racfreport.tex
       pdf-engine: pdflatex
       format-resources:
-        - monash2.png
-        - MBSportrait.jpg
-        - EQUIS.png
-        - AMBA.png
-        - AACSB.png
+        - RACF_v1.png

@@ -211,7 +211,7 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 
-%% MONASH STUFF
+%% RACF STUFF
 
 %% CAPTIONS
 \RequirePackage{caption}
@@ -261,9 +261,9 @@ $endif$
 
 %% SECTION TITLES
 \RequirePackage[compact,sf,bf]{titlesec}
-\titleformat*{\section}{\Large\sf\bfseries\color[rgb]{0.7,0,0}}
-\titleformat*{\subsection}{\large\sf\bfseries\color[rgb]{0.7,0,0}}
-\titleformat*{\subsubsection}{\sf\bfseries\color[rgb]{0.7,0,0}}
+\titleformat*{\section}{\Large\sf\bfseries\color[rgb]{0.04705882,0.1372549,0.2509804}}
+\titleformat*{\subsection}{\large\sf\bfseries\color[rgb]{0.04705882,0.1372549,0.2509804}}
+\titleformat*{\subsubsection}{\sf\bfseries\color[rgb]{0.04705882,0.1372549,0.2509804}}
 \titlespacing{\section}{0pt}{2ex}{.5ex}
 \titlespacing{\subsection}{0pt}{1.5ex}{0ex}
 \titlespacing{\subsubsection}{0pt}{.5ex}{0ex}
@@ -373,27 +373,25 @@ $endif$
 $if(department)$
   \def\name{$department$}
 $else$
-  \def\name{Department of \hbox{Econometrics \&} \hbox{Business Statistics}}
+  \def\name{}
 $endif$
 
 $if(phone)$
   \telephone{$phone$}
 $else$
-  \telephone{(03) 9905 2478}
+  \telephone{}
 $endif$
 
 $if(email)$
   \email{$email$}
 $else$
-  \email{BusEco-Econometrics@monash.edu}
+  \email{info@racfoundation.org}
 $endif$
 
-\def\webaddress{\url{http://buseco.monash.edu/ebs/consulting/}}
-\def\abn{12 377 614 012}
+\def\webaddress{\url{http://www.racfoundation.org}}
 \def\extraspace{\vspace*{1.6cm}}
 \makeatletter
-\def\contactdetails{\faicon{phone} & \@telephone \\
-                    \faicon{envelope} & \@email}
+\def\contactdetails{\faicon{envelope} & \@email}
 \makeatother
 
 \usepackage[absolute,overlay]{textpos}
@@ -402,35 +400,28 @@ $endif$
 
 %%%% FRONT PAGE OF REPORTS
 
-\def\reporttype{Report for}
+\def\reporttype{A Technical Report for}
 
 \long\def\front#1#2#3{
 \newpage
-\begin{textblock}{7}(12.7,28.2)\hfill
-\includegraphics[height=0.6cm]{AACSB}~~~
-\includegraphics[height=0.6cm]{EQUIS}~~~
-\includegraphics[height=0.6cm]{AMBA}
-\end{textblock}
 \begin{singlespacing}
 \thispagestyle{empty}
 \vspace*{-1.4cm}
 \hspace*{-1.4cm}
 \hbox to 16cm{
   \hbox to 6.5cm{\vbox to 14cm{\vbox to 25cm{
-    \includegraphics[width=6cm]{monash2}
+    \includegraphics[width=6cm]{RACF_v1}
     \vfill
-    \includegraphics[width=2cm]{MBSportrait}
     \vspace{0.4cm}
     \par
     \parbox{6.3cm}{\raggedright
-      \sf\color[rgb]{0.00,0.00,0.70}
+      \sf\color[rgb]{0.04705882,0.1372549,0.2509804}
       {\large\textbf{\name}}\par
       \vspace{.7cm}
       \tabcolsep=0.12cm\sf\small
       \begin{tabular}{@{}ll@{}}\contactdetails
       \end{tabular}
       \vspace*{0.3cm}\par
-      ABN: \abn\par
     }
   }\vss}\hss}
   \hspace*{0.2cm}
@@ -438,7 +429,7 @@ $endif$
   \hbox to 10cm{\vbox to 14cm{\vbox to 25cm{
       \vspace*{3cm}\sf\raggedright
       \parbox{10cm}{\sf\raggedright\baselineskip=1.2cm
-         \fontsize{24.88}{30}\color[rgb]{0.70,0.00,0.00}\sf\textbf{#1}}
+         \fontsize{24.88}{30}\color[rgb]{0.04705882,0.1372549,0.2509804}\sf\textbf{#1}}
       \par
       \vfill
       \large

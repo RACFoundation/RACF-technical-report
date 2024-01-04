@@ -1,15 +1,16 @@
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
-# Monash Report Format Template
+# RAC Foundation Technical Report Format Template
 
-This is a Quarto template that assists you in creating a Monash
-University report.
+This is a Quarto template that assists you in creating an RAC Foundation
+technical report.
 
 ## Creating a new report
 
 You can use this as a template to create a report. To do this, use the
-following command:
+following command in the terminal window of RStudio (in the
+project/folder of your choice):
 
 ``` bash
 quarto use template numbats/monash-quarto-report
@@ -30,4 +31,8 @@ quarto install extension numbats/monash-quarto-report
 
 ## Example
 
+<div>
+
 [![](examples/template.png)](examples/template.pdf)
+
+</div>

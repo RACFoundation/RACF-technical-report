@@ -1,16 +1,14 @@
 ---
-title: "Expert advice from experts"
+title: "Sample Title for Technical Report"
 author:
-- familyname: Curie
-  othernames: Marie
-  qualifications: Nobel Prize, PhD
-- familyname: Curie
-  othernames: Pierre
-  qualifications: Nobel Prize, PhD
-email: mcurie.notreal@gmail.com
-phone: (03) 9905 2478
-department: Department of\newline Econometrics &\newline Business Statistics
-organization: Acme Corporation
+- familyname: Wengraf
+  othernames: Ivo
+  qualifications: PhD, FRGS, FCIHT
+- familyname: Chatterton
+  othernames: Tim
+  qualifications: PhD
+email: info@racfoundation.org
+organization: the RAC Foundation
 number-sections: true
 fig-height: 5
 fig-width: 8

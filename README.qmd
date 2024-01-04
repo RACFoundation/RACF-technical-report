@@ -13,7 +13,7 @@ library(magick)
 
 # Render template
 quarto_render(input = "template.qmd")
-fs::file_delete(c("AACSB.png","AMBA.png","EQUIS.png","MBSportrait.jpg","monash2.png"))
+fs::file_delete(c("RACF_v1.png"))
 # Convert rendered PDF to PNG
 image_read_pdf("template.pdf") |>
   image_montage(geometry = "x2000+25+35", tile = "2x1", bg = "grey92", shadow = TRUE) |>
@@ -23,14 +23,14 @@ image_read_pdf("template.pdf") |>
 fs::file_move("template.pdf", "examples/template.pdf")
 ```
 
-# Monash Report Format Template
+# RAC Foundation Technical Report Format Template
 
-This is a Quarto template that assists you in creating a Monash University report.
+This is a Quarto template that assists you in creating an RAC Foundation technical report.
 
 ## Creating a new report
 
 You can use this as a template to create a report.
-To do this, use the following command:
+To do this, use the following command in the terminal window of RStudio (in the project/folder of your choice):
 
 ```bash
 quarto use template numbats/monash-quarto-report

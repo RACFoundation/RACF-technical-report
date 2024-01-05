@@ -23,6 +23,10 @@ execute:
   message: false
 ---
 
+# Executive Summary {.unnumbered}
+
+A short executive summary -- no more than 1 -- 2 paras/half-a-page tops -- stating what analysis the report covers and what that analysis reveals.
+{{< pagebreak >}}
 
 # Introduction
 
@@ -40,8 +44,6 @@ df |>
   geom_rug()
 ```
 
-@fig-density shows a kernel density estimate of simulated data from a N(0,1) distribution. The sample variance is given by
-$$
+@fig-density shows a kernel density estimate of simulated data from a N(0,1) distribution. The sample variance is given by $$
   s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i-\bar{x})^2 = `r round(sd(df$x), 2)`.
-$$ {#eq-s2}
-Note that @eq-s2 is an unbiased estimate of the variance, but it is not the maximum likelihood estimate [@Rice2007, p.269].
+$$ {#eq-s2} Note that @eq-s2 is an unbiased estimate of the variance, but it is not the maximum likelihood estimate [@Rice2007, p.269].

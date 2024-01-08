@@ -16,7 +16,7 @@ quarto_render(input = "template.qmd")
 fs::file_delete(c("RACF_v1.png"))
 # Convert rendered PDF to PNG
 image_read_pdf("template.pdf") |>
-  image_montage(geometry = "x2000+25+35", tile = "2x1", bg = "grey92", shadow = TRUE) |>
+  image_montage(geometry = "x2000+25+35", tile = "3x1", bg = "grey92", shadow = TRUE) |>
   image_convert(format = "png") |>
   image_write("examples/template.png")
 # Move pdf to examples folder

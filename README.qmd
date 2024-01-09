@@ -50,3 +50,7 @@ quarto install extension RACFoundation/RACF-technical-report
 ## Example
 
 [![](examples/template.png)](examples/template.pdf)
+
+## Errors
+
+If you get an error where you get something like "!pdfTeX error: pdflatex.exe (file bchb8a.pfb): cannot open Type 1 font file for reading ==> Fatal error occurred, no output PDF file produced!", this is caused by an installation issue with TinyTex, resulting in a required font not appearing where it should be.
